@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>자기소개 페이지</title>
     <link rel="stylesheet" href="style.css">
-	<style>
-	  /* 전체 스타일 */
+<style>
+	/* 전체 스타일 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +15,95 @@
 body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
-  line-height: 1
+  line-height: 1.5;
+}
+
+/* 헤더 스타일 */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav li {
+  margin-left: 20px;
+}
+
+header nav a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #0077cc;
+}
+
+/* 메인 스타일 */
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li::before {
+  content: "●";
+  color: #0077cc;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
 </style>
   </head>
   <body>
