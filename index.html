@@ -1,165 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>자기소개 페이지</title>
-    <link rel="stylesheet" href="style.css">
-<style>
-	/* 전체 스타일 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* 헤더 스타일 */
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-
-header h1 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-header nav ul {
-  display: flex;
-  list-style: none;
-}
-
-header nav li {
-  margin-left: 20px;
-}
-
-header nav a {
-  color: #333;
-  font-size: 16px;
-  text-decoration: none;
-}
-
-header nav a:hover {
-  color: #0077cc;
-}
-
-/* 메인 스타일 */
-main {
-  margin-top: 100px;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-li::before {
-  content: "●";
-  color: #0077cc;
-  font-size: 14px;
-  margin-right: 10px;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 14px;
-}
-
-</style>
+    <title>귀엽고 깔끔한 웹페이지</title>
+    <style>
+      /* 전체 스타일 */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333333;
+        margin: 0;
+        padding: 0;
+      }
+      /* 헤더 스타일 */
+      header {
+        background-color: #ffccff;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin: 0;
+      }
+      /* 메인 내용 스타일 */
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+      /* 각각의 아이템 스타일 */
+      .item {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        width: 300px;
+      }
+      h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+      img {
+        border-radius: 50%;
+        height: 150px;
+        margin: 20px 0;
+        width: 150px;
+      }
+      p {
+        font-size: 16px;
+        margin: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>이름</h1>
-      <nav>
-        <ul>
-          <li><a href="#about-me">소개</a></li>
-          <li><a href="#skills">보유 기술</a></li>
-          <li><a href="#projects">프로젝트</a></li>
-          <li><a href="#contact">연락처</a></li>
-        </ul>
-      </nav>
+      <h1>귀엽고 깔끔한 웹페이지</h1>
     </header>
     <main>
-      <section id="about-me">
-        <h2>소개</h2>
-        <p>안녕하세요! 제 이름은 [이름]이고 [직업/전공/관심 분야 등]을 공부하고 있습니다. [자신의 간단한 이력/경험 등]을 가지고 있어요. [자신의 강점/특징 등]을 바탕으로 [앞으로의 목표/계획 등]을 가지고 있습니다.</p>
-      </section>
-      <section id="skills">
-        <h2>보유 기술</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-        </ul>
-      </section>
-      <section id="projects">
-        <h2>프로젝트</h2>
-        <ul>
-          <li>
-            <h3>프로젝트 이름 1</h3>
-            <p>프로젝트 설명</p>
-          </li>
-          <li>
-            <h3>프로젝트 이름 2</h3>
-            <p>프로젝트 설명</p>
-          </li>
-          <li>
-            <h3>프로젝트 이름 3</h3>
-            <p>프로젝트 설명</p>
-          </li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>연락처</h2>
-        <ul>
-          <li>Email: [이메일 주소]</li>
-          <li>Github: [깃허브 링크]</li>
-          <li>LinkedIn: [링크드인 프로필 링크]</li>
-        </ul>
-      </section>
+      <div class="item">
+        <img src="https://i.imgur.com/6eIbR5w.png" alt="고양이" />
+        <h2>고양이</h2>
+        <p>고양이는 귀여워요.</p>
+      </div>
+      <div class="item">
+        <img src="https://i.imgur.com/McGt0JL.png" alt="강아지" />
+        <h2>강아지</h2>
+        <p>강아지도 귀여워요.</p>
+      </div>
+      <div class="item">
+        <img src="https://i.imgur.com/Vj7pB8W.png" alt="토끼" />
+        <h2>토끼</h2>
+        <p>토끼도 귀여워요.</p>
+      </div>
     </main>
-    <footer>
-      <p>© 2023 ChatGPT. All rights reserved.</p>
-    </footer>
   </body>
 </html>
