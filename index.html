@@ -1,112 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>내 홈페이지</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	
-<style>
-/* 전체적인 스타일 */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #F0F0F0;
-  color: #333;
-  margin: 0;
-}
-
-/* 헤더 스타일 */
-header {
-  background-color: #3B3B3B;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 48px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 10px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-nav a:hover {
-  border-bottom: 3px solid #fff;
-}
-
-/* 메인 스타일 */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-section h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-section p {
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-/* 푸터 스타일 */
-footer {
-  background-color: #3B3B3B;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
-</style>
+  <meta charset="utf-8">
+  <title>나의 귀여운 자기소개 페이지</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #F2F2F2;
+    }
+    
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      margin-top: 80px;
+      color: #5B5B5B;
+    }
+    
+    p {
+      font-size: 24px;
+      text-align: center;
+      color: #5B5B5B;
+      margin-top: 20px;
+    }
+    
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 40px auto 20px auto;
+      display: block;
+      background-color: #F8C9D4;
+      background-image: linear-gradient(315deg, #F8C9D4 0%, #A88CFF 74%);
+    }
+    
+    .info {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+      background-color: #FFF;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+    
+    .btn {
+      display: block;
+      width: 200px;
+      height: 50px;
+      margin: 20px auto;
+      text-align: center;
+      line-height: 50px;
+      color: #FFF;
+      background-color: #A88CFF;
+      border-radius: 25px;
+      text-decoration: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: #7552B2;
+    }
+  </style>
 </head>
 <body>
-	<header>
-		<h1>잼페이지</h1>
-		<nav>
-			<ul>
-				<li><a href="#home">홈</a></li>
-				<li><a href="#about">소개</a></li>
-				<li><a href="#contact">연락처</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="home">
-			<h2>안녕하세요!</h2>
-			<p>이곳은 잼페이지입니다. 제 소개와 연락처 등을 확인하실 수 있습니다.</p>
-		</section>
-		<section id="about">
-			<h2>제 소개</h2>
-			<p>제 이름은 김재림입니다. 계원예술대학교 디지털미디어디자인과 프로그래밍 전공입니다. </p>
-		</section>
-		<section id="contact">
-			<h2>연락처</h2>
-			<p>이메일: 22261023@kaywon.ac.kr </p>
-			<p>SNS: instagram @jaaerim </p>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 My Website. All rights reserved.</p>
-	</footer>
+  <h1>안녕하세요!</h1>
+  <div class="info">
+    <img class="profile-img" src="https://via.placeholder.com/200x200" alt="프로필 사진">
+    <p>저는 곰돌이입니다.</p>
+    <p>HTML과 CSS를 배우고 있어요.</p>
+    <a class="btn" href="#">자세히 알아보기</a>
+  </div>
 </body>
 </html>
+
