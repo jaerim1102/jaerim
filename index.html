@@ -1,96 +1,170 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cute Pink Webpage</title>
+	<title>My School Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-		body {
-			background-color: #F9CEE5;
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
+	* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-		header {
-			background-color: #F1A7C1;
-			color: #FFFFFF;
-			padding: 20px;
-			text-align: center;
-		}
+body {
+	font-family: Arial, sans-serif;
+	color: #333;
+	line-height: 1.5;
+}
 
-		h1 {
-			font-size: 48px;
-			margin: 0;
-		}
+header {
+	background-color: #ff9baf;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
-		nav {
-			background-color: #F9CEE5;
-			padding: 10px;
-			text-align: center;
-		}
+nav ul {
+	display: flex;
+}
 
-		nav ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-		}
+nav ul li {
+	margin: 0 10px;
+	list-style: none;
+}
 
-		nav li {
-			display: inline-block;
-			margin-right: 20px;
-		}
+nav ul li a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 10px;
+	transition: all 0.3s ease-in-out;
+}
 
-		nav a {
-			color: #7B4D6F;
-			font-size: 24px;
-			text-decoration: none;
-		}
+nav ul li a:hover {
+	background-color: #333;
+	color: #fff;
+}
 
-		section {
-			margin: 20px;
-			text-align: center;
-		}
+#hero {
+	background-image: url(https://dummyimage.com/1200x400/ff9baf/fff.png&text=Hero+Image);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+	padding: 100px 0;
+}
 
-		section img {
-			max-width: 100%;
-			height: auto;
-		}
+#hero h1 {
+	font-size: 60px;
+	margin-bottom: 20px;
+}
 
-		section p {
-			font-size: 24px;
-			line-height: 1.5;
-			margin: 20px;
-			text-align: justify;
-		}
-
-		footer {
-			background-color: #F1A7C1;
-			color: #FFFFFF;
-			padding: 20px;
-			text-align: center;
-		}
+#hero p {
+	font-size: 24px;
+	margin-bottom:
 
 	</style>
 </head>
 <body>
 	<header>
-		<h1>Welcome to My Cute Pink Webpage</h1>
+		<div class="logo">
+			<img src="https://dummyimage.com/100x100/000/fff.png&text=Logo" alt="School Logo">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Courses</a></li>
+				<li><a href="#">Events</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
 	</header>
 
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
+	<main>
+		<section id="hero">
+			<h1>Welcome to My School Website</h1>
+			<p>Learn, Explore and Excel with Us!</p>
+			<a href="#" class="btn">Learn More</a>
+		</section>
 
-	<section>
-		<img src="https://dummyimage.com/600x400/F1A7C1/ffffff.png&text=Cute+Pink+Image" alt="Cute Pink Image">
-		<p>This is a cute pink webpage. Isn't it adorable?</p>
-	</section>
+		<section id="about">
+			<h2>About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius sit amet tellus id tristique. Maecenas ac est vel velit auctor bibendum a et nibh. Integer ultrices vestibulum quam, at laoreet est blandit eget. Proin in odio quis dolor fringilla congue eu ut purus. </p>
+		</section>
+
+		<section id="courses">
+			<h2>Our Courses</h2>
+			<div class="course">
+				<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Course+Image" alt="Course Image">
+				<h3>Course Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius sit amet tellus id tristique. </p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+			<div class="course">
+				<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Course+Image" alt="Course Image">
+				<h3>Course Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius sit amet tellus id tristique. </p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+			<div class="course">
+				<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Course+Image" alt="Course Image">
+				<h3>Course Title</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius sit amet tellus id tristique. </p>
+				<a href="#" class="btn">Learn More</a>
+			</div>
+		</section>
+
+		<section id="events">
+			<h2>Upcoming Events</h2>
+			<div class="event">
+				<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Event+Image">...
+				</div>
+				<div class="event">
+					<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Event+Image" alt="Event Image">
+					<h3>Event Title</h3>
+					<p>Event Date</p>
+					<a href="#" class="btn">Learn More</a>
+				</div>
+				<div class="event">
+					<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Event+Image" alt="Event Image">
+					<h3>Event Title</h3>
+					<p>Event Date</p>
+					<a href="#" class="btn">Learn More</a>
+				</div>
+				<div class="event">
+					<img src="https://dummyimage.com/400x200/8E8E8E/fff.png&text=Event+Image" alt="Event Image">
+					<h3>Event Title</h3>
+					<p>Event Date</p>
+					<a href="#" class="btn">Learn More</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+
+				<button type="submit" class="btn">Send Message</button>
+			</form>
+		</section>
+	</main>
 
 	<footer>
-		<p>&copy; 2023 My Cute Pink Webpage. All rights reserved.</p>
+		<p>Copyright © 2023 My School.
+			All rights reserved.</p>
 	</footer>
+
 </body>
 </html>
+
+					  
